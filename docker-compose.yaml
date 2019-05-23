@@ -1,0 +1,10 @@
+version: '2'
+services:
+  web:
+    image: loom-ubuntu-docker
+    container_name: loom-ubuntu-docker
+    ports:
+    - "9999:9999"
+    - "46656:46656"
+    - "46657:46657"
+    - "46658:46658"
