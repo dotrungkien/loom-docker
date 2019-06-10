@@ -1,0 +1,16 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: loom-deploy
+spec:
+  selector:
+    matchLabels:
+      app: dappchain
+  template:
+    metadata:
+      labels:
+        app: dappchain
+    spec:
+      containers:
+        - name: node
+          image: loomnetwork/loom

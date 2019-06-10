@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: loom-service
+spec:
+  selector:
+    app: dappchain
+  ports:
+    - port: 9999
+      targetPort: 9999
+    - port: 46656
+      targetPort: 46656
+    - port: 46657
+      targetPort: 46657
+    - port: 46658
+      targetPort: 46658
