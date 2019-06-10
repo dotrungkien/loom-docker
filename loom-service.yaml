@@ -8,9 +8,13 @@ spec:
   ports:
     - port: 9999
       targetPort: 9999
+      name: port1
     - port: 46656
       targetPort: 46656
+      name: port2
     - port: 46657
       targetPort: 46657
+      name: port3
     - port: 46658
       targetPort: 46658
+      name: port4
