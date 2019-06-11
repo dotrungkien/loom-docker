@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: loom-deploy
 spec:
+  replicas: 1
   selector:
     matchLabels:
       app: dappchain

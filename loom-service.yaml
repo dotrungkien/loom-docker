@@ -3,6 +3,7 @@ kind: Service
 metadata:
   name: loom-service
 spec:
+  type: LoadBalancer
   selector:
     app: dappchain
   ports:
